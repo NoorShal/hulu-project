@@ -2,410 +2,151 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Graphik', sans-serif;
+    color: white;
+}
+@import url('https://fonts.cdnfonts.com/css/graphik');
+/* Sports */
+.sports {
+    background-image: url('assets/sports-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    height: 870px;
+    position: static;
 }
 
-/* nour's part start*/
-body {
-    background-color: #08080a;
-    font-family: "Graphik Web", sans-serif;
+.sports-outer-div {
+    position: static;
+    top: 60px;
+    left: 100px;
+    max-width: 1236px;
+    max-height: 870px;
+    margin-bottom: 0px;
+    margin-left: 342px;
+    margin-right: 342px;
+    margin-top: 0px;
+    padding-bottom: 190px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 60px;
 }
 
-.plans {
-    background-color: #0b0c0f;
-    color: #fff;
+.sports-inner-div {
+    margin-top: 160px;
 }
 
-.plans-container {
-    max-width: 900px;
-    margin: 0 auto;
+.sports-tab {
+    padding-bottom: 31px;
+    white-space: nowrap;
+    width: 1236px;
 }
 
-.plans-container .header {
-    width: 100%;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 35px;
+.sports-tab-button-active {
+    font-weight: bold;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.125;
+    letter-spacing: 0.25px;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-right: 37px;
+    display: inline-block;
+    background: none;
+    border: none;
+    border-radius: 0;
 }
 
-.plans-upper-section {
-    display: flex;
-    flex-direction: column;
-    border-top: 1px solid rgba(200, 200, 200, 0.4);
-    border-bottom: 1px solid rgba(200, 200, 200, 0.4);
+.sports-tab-button-active:hover {
+    color:#C8C8C8;
+}
 
+.sports-tab-active {
+    height: 5px;
+    margin-top: 15px;
+    display: block;
+    background: #fff;
+    position: absolute;
+    cursor: pointer;
+    white-space: nowrap;
 }
-.plan-prices-buttons{
-    flex: 1 0 60%;
 
+.sports-tab-button-passive {
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: bold;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.125;
+    letter-spacing: 0.25px;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-right: 37px;
+    display: inline-block;
+    background: none;
+    border: none;
+    border-radius: 0;
 }
-.plan-switcher-container
-{
-    flex: 1 0 40%;
-}
-.plan-switch .left-label,
-.plan-switch .right-label{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
+.sports-tab-button-passive:hover {
+    color:rgba(200,200,200,0.4);
 }
-.plan-switch .left-label .logo{
-    margin-top: 18px;
-    text-align: center;
 
-}
-.plan-switch .left-label .logo img{
-    width: 35px;
-    object-fit: cover;
-}
-.plans .header-title {
-    font-family: "Graphik Web", sans-serif;
+.sports-big-text {
     font-size: 48px;
     font-weight: 600;
     line-height: 1.25;
-    letter-spacing: -0.5px;
-    margin: 0 0 16px;
-
+    letter-spacing: -0.5;
+    margin-top: 25px;
+    max-width: 650px;
 }
 
-.plans .header-description {
-    font-family: 'Graphik Web', 'Graphik', sans-serif;
+.sports-middle-text {
+    max-width: 550px;
+    margin-top: 18px;
     font-size: 18px;
     font-weight: 400;
-    letter-spacing: 0px;
     line-height: 1.32;
-    text-transform: none;
 }
 
-.plan .trial{
-    font-size: 10px;
-    font-weight: 500;
-    line-height: 1;
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
-}
-.plan .title{
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.29;
-
-}
-.plan.with-adds {
-    border-right: 1px solid rgba(200, 200, 200, 0.4);
-}
-
-.plan-switcher-container {
+.sports-channel-logos {
+    width: 350px;
+    height: 100%;
+    margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    padding: 20px 0px;
-}
-.plan-switch{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
+    justify-content: flex-start;
 }
 
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+.sports-channel-logos img {
+    width: 44px;
 }
 
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #424957;
-    -webkit-transition: .2s;
-    transition: .2s;
-    border-radius: 34px;
-
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 35px;
-    width: 35px;
-    left: 0;
-    bottom: 0;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-input:checked + .slider {
-    background-color: #1ce783;
-}
-
-input:focus + .slider {
-    box-shadow: 0 0 1px #1ce783;
-}
-
-input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-
-.slider.round:before {
-    border-radius: 50%;
-}
-
-.plan-prices-buttons {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: end;
-    width: 100%;
-    border-top: 1px solid rgba(200, 200, 200, 0.4);
-
-}
-
-.plan {
-    display: flex;
-    flex-direction: column;
-    min-height: 189px;
-    padding: 25px 0.5rem 31px;
-    width: 100%;
-    text-align: center;
-}
-
-.most-popular {
-    text-align: center;
-    height: 33px;
-}
-
-
-.most-popular span {
-    background-color: #1ce783;
-    color: #16181d;
-    padding: 10.5px 27px;
-    border-radius: 100px;
-    font-size: 9px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    white-space: nowrap;
-    text-transform: uppercase;
-}
-
-.plan .trial {
-    margin-top: 11px;
-    margin-bottom: 6px;
-    line-height: 1;
-    color: #BEC0C2;;
-}
-
-.plan .title {
-    margin-bottom: 13px;
-}
-
-.price-button {
-    min-width: 100px;
-    padding: 0 24px;
-    height: 48px;
-    width: 100%;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1;
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
-    border-radius: 4px;
-    width: 100%;
-    color: #040405;
-    border-width: 0px;
-    border-style: solid;
-    background-color: #ffffff;
-    cursor: pointer;
-    transition: .3s;
-}
-.price-button:hover {
-    background-color: #ffffffCC;
-}
-
-.plan-feature-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 1px solid rgba(200, 200, 200, 0.4);
-}
-
-.plan-feature-item .col-1 {
-    text-align: center;
-    width: 100%;
-    gap: 10px;
-    flex: 1 0 40%;
-
-}
-
-
-.plan-feature-item .col-1 span,
-.plan-feature-item .col-2 span{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.4;
-    letter-spacing: 0;
-    padding: 20px 0;
-}
-.plan-feature-item .col-1 img{
-    display: inline-block;
-    vertical-align: middle;
-    padding-left: 6px;
-}
-.plan-feature-item .col-2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    flex: 1 0 60%;
-
-}
-.plan-feature-item .col-2 .with-add-feature span,
-.plan-feature-item .col-2 .without-add-feature span {
-    padding: 17px 10px;
+.sports-channel-logos > div {
+    background-image: url(assets/channel-logo-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    height: 55px;
+    width: 55px;
     display: flex;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    overflow: hidden;
 }
 
-.plan-feature-item .col-2 .without-add-feature ,
-.plan-feature-item .col-2 .with-add-feature {
-    width: 100%;
-}
-
-
-.separator{
-    display: none;
-    width: 1px;
-    height: 20px;
-    background: #e8eaed;
-}
-.disclaimer{
-    border-bottom: 1px solid rgba(200, 200, 200, 0.4);
-    text-align: center;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-bottom: 3rem;
-}
-
-.disclaimer  p{
+.sports-faded-text {
     font-size: 10px;
     font-weight: 400;
-    letter-spacing: 0;
     line-height: 1.46;
-
-}
-.show-more{
-    text-align: center;
-    padding-top:1.5rem;
-    padding-bottom: 1.5rem ;
-    border-bottom: 1px solid rgba(200, 200, 200, 0.4);
-}
-@media (min-width: 768px)  {
-    .separator{
-        display: block;
-
-    }
-    .most-popular span{
-        padding: 7px 15px 5px;
-        font-size: 9px;
-    }
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 10px;
 }
 
-
-@media  (min-width: 1024px) {
-    .plans-upper-section {
-        flex-direction: row;
-        justify-content: space-between;
-
-    }
-
-    .plan-prices-buttons {
-        border-top: none;
-        border-bottom: none;
-
-        width: 60%;
-    }
-
-    .plans-container .header {
-        width: 100%;
-        text-align: center;
-        padding-top: 80px;
-        padding-bottom: 40px;
-    }
-
-    .plan.with-adds {
-        border-right: none;
-        background-color: #272c34;
-    }
-
-    .plan .trial{
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1;
-        letter-spacing: 0.6px;
-        text-transform: uppercase;
-    }
-    .plan .title{
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 1.32;
-
-    }
-    .plan-feature-item {
-        flex-direction: row;
-        align-items: center;
-    }
-    .plan-feature-item .col-1 {
-        text-align: left;
-        width: 100%;
-
-    }
-    .plan-feature-item .col-1 span,
-    .plan-feature-item .col-2 span{
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1.4;
-        letter-spacing: 0;
-        padding: 20px 0;
-
-    }
-    .separator{
-        display: none;
-    }
-    .plan.with-adds,
-    .with-add-feature{
-        background-color: #272c34;
-    }
-    .disclaimer{
-        text-align: left;
-    }
+.sports-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
-@media (min-width: 1280px) {
-    .plans-container {
-        max-width: 976px;
-    }
-    .most-popular span{
-        padding: 10.5px 27px;
-    }
-    .plan.with-adds,
-    .with-add-feature{
-        background-color: inherit;
-    }
-}
-@media (min-width: 1600px) {
-    .plans-container {
-        max-width: 1236px;
-    }
-}
-/* nour's part end*/
-
