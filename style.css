@@ -495,8 +495,6 @@ input:checked + .slider:before {
 
 .footer-all{
   background-color: rgb(232,234,237);
-  position: fixed;
-  bottom: 0;
   width: 100%;
   font-family: Graphik light;
   letter-spacing: 0.02rem;
