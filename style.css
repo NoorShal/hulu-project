@@ -88,9 +88,11 @@ h5 {
 /* nour's part start*/
 body {
     background-color: #08080a;
-    font-family: "Graphik Web", sans-serif;
 }
+body,p,h1,h2,h3,h4,button{
+    font-family: "Graphik Web", sans-serif;
 
+}
 .plans {
     background-color: #0b0c0f;
     color: #fff;
@@ -527,7 +529,6 @@ input:checked + .slider:before {
 div > a,p {
   text-decoration: none;
   color: #586174;
-  font-family: Graphik light;
   padding: 0px 32px 8px 0px;
 }
 
@@ -621,14 +622,6 @@ img{
     text-align: center;
 }
 
-div {
-    display: block;
-}
-
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
 .Billboard {
     background-color: #0b0c0f;
     font-family: "Grafik Web", "Graphik", Arial,
@@ -697,12 +690,6 @@ div {
     color: rgba(255,255,255,0.6);
 }
 
-button {
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0;
-    border-radius: 0;
-}
 
 .Billboard_modalLink {
     text-decoration: underline;
