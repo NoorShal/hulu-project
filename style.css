@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Graphik Web", sans-serif;
     color: white;
 }
 /* Sports */
@@ -33,6 +32,7 @@
 }
 
 .sports-tab-button-active {
+    font-family: "Graphik Web", sans-serif;
     font-weight: bold;
     font-size: 12px;
     font-weight: 700;
@@ -62,6 +62,7 @@
 }
 
 .sports-tab-button-passive {
+    font-family: "Graphik Web", sans-serif;
     color: rgba(255, 255, 255, 0.4);
     font-weight: bold;
     font-size: 12px;
@@ -82,6 +83,7 @@
 }
 
 .sports-big-text {
+    font-family: "Graphik Web", sans-serif;
     font-size: 32px;
     font-weight: 600;
     line-height: 1.2;
@@ -91,6 +93,7 @@
 }
 
 .sports-middle-text {
+    font-family: "Graphik Web", sans-serif;
     max-width: 550px;
     margin-top: 4px;
     margin-left: auto;
@@ -137,6 +140,7 @@
 }
 
 .sports-faded-text {
+    font-family: "Graphik Web", sans-serif;
     font-size: 10px;
     font-weight: 400;
     line-height: 1.46;
@@ -149,6 +153,7 @@
 }
 
 .sports-link {
+    font-family: "Graphik Web", sans-serif;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);
