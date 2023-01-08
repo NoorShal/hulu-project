@@ -1024,7 +1024,7 @@ img{
     background-color: #0b0c0f;
     font-family: "Grafik Web", "Graphik", Arial,
     Helvetica, sans-serif;
-    padding: 1px;
+    padding: 20px;
 }
 
 .Billboard_border {
@@ -1033,7 +1033,6 @@ img{
 
 .Billboard_border {
     margin: 19px 10px;
-    border: 4px solid #000;
     box-sizing: border-box;
     border-radius: 16px;
 }
@@ -1175,7 +1174,11 @@ img{
 
 
 }
-
+@media (min-width: 1024px) {
+.Billboard_container {
+    padding: 100px 0;
+    }
+}
 
 
 
