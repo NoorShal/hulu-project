@@ -2,17 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
 }
+
 /* Sports */
 
 .sports {
-    background-image: url(assets/sports-background-mobile.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url(assets/sports-background-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: static;
     background-position: top center;
 }
+
 .sports-outer-div {
     position: static;
     height: 760px;
@@ -33,6 +34,7 @@
 
 .sports-tab-button-active {
     font-family: "Graphik Web", sans-serif;
+    color: white;
     font-weight: bold;
     font-size: 12px;
     font-weight: 700;
@@ -84,6 +86,7 @@
 
 .sports-big-text {
     font-family: "Graphik Web", sans-serif;
+    color: white;
     font-size: 32px;
     font-weight: 600;
     line-height: 1.2;
@@ -94,6 +97,7 @@
 
 .sports-middle-text {
     font-family: "Graphik Web", sans-serif;
+    color: white;
     max-width: 550px;
     margin-top: 4px;
     margin-left: auto;
@@ -141,6 +145,7 @@
 
 .sports-faded-text {
     font-family: "Graphik Web", sans-serif;
+    color: white;
     font-size: 10px;
     font-weight: 400;
     line-height: 1.46;
@@ -160,13 +165,11 @@
 }
 
 @media (min-width: 768px) {
+
     .sports {
-        background-image: url(assets/sports-background-mobile.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: static;
         background-position: 0 80%;
     }
+
     .sports-outer-div {
         position: static;
         height: 1000px;
@@ -175,6 +178,7 @@
         padding-bottom: 190px;
         padding-top: 34px;
     }
+
     .sports-inner-div {
         margin-top: 0px;
     }
@@ -209,13 +213,15 @@
 }
 
 @media (min-width: 1024px) {
+
     .sports {
-        background-image: url(assets/sports-background.jpg);
+        background-image:linear-gradient(90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72%), url(assets/sports-background.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         position: static;
         background-position: 0% 0%;
     }
+
     .sports-outer-div {
         position: static;
         max-width: 786px;
@@ -226,6 +232,7 @@
         padding-bottom: 190px;
         padding-top: 60px;
     }
+
     .sports-inner-div {
         margin-top: 100px;
     }
@@ -339,13 +346,7 @@
 }
 
 @media (min-width: 1280px) {
-    .sports {
-        background-image: url(assets/sports-background.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: static;
-        background-position: 0% 0%;
-    }
+
     .sports-outer-div {
         position: static;
         max-width: 976px;
@@ -370,13 +371,6 @@
 }
 
 @media (min-width: 1600px) {
-    .sports {
-        background-image: url(assets/sports-background.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: static;
-        background-position: 0% 0%;
-    }
 
     .sports-outer-div {
         position: static;
